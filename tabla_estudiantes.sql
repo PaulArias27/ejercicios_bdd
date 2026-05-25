@@ -41,3 +41,10 @@ SELECT * FROM estudiantes WHERE curso = 'bases de datos';
 SELECT * FROM estudiantes WHERE fecha_registro > '2026-03-01';
 
 SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-01-01' AND '2026-04-30';
+
+--update o actualizaciones
+UPDATE estudiantes SET curso = 'ia' WHERE id_estudiante = '1';
+UPDATE estudiantes SET curso = 'bases de datos' WHERE id_estudiante = '7';
+UPDATE estudiantes SET edad = 12 WHERE id_estudiante = '9';
+UPDATE estudiantes SET fecha_registro = '2026-05-02' WHERE id_estudiante = '12';
+UPDATE estudiantes SET fecha_registro = '2026-05-02',edad = 15,apellido = 'Salazar' WHERE id_estudiante = '15';
