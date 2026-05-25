@@ -48,3 +48,10 @@ UPDATE estudiantes SET curso = 'bases de datos' WHERE id_estudiante = '7';
 UPDATE estudiantes SET edad = 12 WHERE id_estudiante = '9';
 UPDATE estudiantes SET fecha_registro = '2026-05-02' WHERE id_estudiante = '12';
 UPDATE estudiantes SET fecha_registro = '2026-05-02',edad = 15,apellido = 'Salazar' WHERE id_estudiante = '15';
+
+--delete
+DELETE FROM estudiantes WHERE id_estudiante = 1;
+DELETE FROM estudiantes WHERE id_estudiante = 8;
+DELETE FROM estudiantes WHERE curso ='ia';
+DELETE FROM estudiantes WHERE edad = 15;
+DELETE FROM estudiantes WHERE apellido = 'Perez';
