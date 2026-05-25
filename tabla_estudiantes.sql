@@ -26,3 +26,18 @@ INSERT INTO  estudiantes VALUES(12,'Nicolas','Rivera',16,'ciberseguridad','2026-
 INSERT INTO  estudiantes VALUES(13,'Valeria','Rivera',24,'terapia','2026-01-21');
 INSERT INTO  estudiantes VALUES(14,'Rosita','Martillo',30,'psicologia','2026-03-22');
 INSERT INTO  estudiantes VALUES(15,'Cristina','Martines',35,'enfermeria','2026-02-23');
+
+--consultas 
+SELECT * FROM estudiantes;
+
+SELECT nombre,curso FROM estudiantes; 
+
+SELECT * FROM estudiantes WHERE edad > 18;
+
+SELECT * FROM estudiantes WHERE edad BETWEEN 18 AND 25;
+
+SELECT * FROM estudiantes WHERE curso = 'bases de datos';
+
+SELECT * FROM estudiantes WHERE fecha_registro > '2026-03-01';
+
+SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-01-01' AND '2026-04-30';
