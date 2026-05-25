@@ -16,7 +16,7 @@ create table estudiantes(
 ALTER TABLE estudiantes ADD COLUMN correo VARCHAR(100);
 
 --insertar datos
-INSERT INTO  estudiantes VALUES(1,'Juan','Perez',20,'Programcion','2026-01-10','juan@gmail.com');
+INSERT INTO  estudiantes VALUES(1,'Juan','Perez',20,'Programacion','2026-01-10','juan@gmail.com');
 INSERT INTO  estudiantes VALUES(2,'Paul','Arias',27,'software','2026-01-04','paul@gmail.com');
 INSERT INTO  estudiantes VALUES(3,'Ana','Verde',24,'terapia','2026-02-11','ana@gmail.com');
 INSERT INTO  estudiantes VALUES(4,'Pedro','Vite',28,'ia','2026-03-12','pedro@gmail.com');
@@ -61,3 +61,9 @@ DELETE FROM estudiantes WHERE curso ='ia';
 DELETE FROM estudiantes WHERE edad = 15;
 DELETE FROM estudiantes WHERE apellido = 'Perez';
 
+-- consultas por fecha 
+SELECT * FROM estudiantes WHERE fecha_registro > '2026-02-01';
+SELECT * FROM estudiantes WHERE fecha_registro < '2026-05-01';
+SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-02-01' AND '2026-05-01';
+SELECT * FROM estudiantes WHERE fecha_registro = '2026-03-15';
+SELECT * FROM estudiantes WHERE curso = 'Programacion'AND fecha_registro > '2026-01-01';
